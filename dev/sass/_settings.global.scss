@@ -1,12 +1,13 @@
 //fonts
-$siteFont: 'Arial';
+$siteFont: 'Montserrat', sans-serif;
+$siteFont_alt: 'Saira Extra Condensed', sans-serif;
 
 
 //Media Queries
-$small:  "screen and (min-width : 576px)";
-$medium:  "screen and (min-width : 768px)";
-$large: "screen and (min-width : 992px)";
-$xl: "screen and (min-width : 1200px)";
+$small:  "screen and (min-width : 480px)";
+$medium:  "screen and (min-width : 960px)";
+$large: "screen and (min-width : 1024px)";
+$xl: "screen and (min-width : 1440px)";
 
 //Misc
 $border-radius: 3px;
