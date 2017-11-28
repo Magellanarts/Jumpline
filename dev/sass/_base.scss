@@ -2,11 +2,18 @@
 
 html {
   font-family: $siteFont;
+  background: #000;
 }
 
 body {
   text-rendering: optimizeLegibility;
   font-family: $siteFont;
+
+  &.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+    max-height: 100vh;
+  }
 }
 
 img {

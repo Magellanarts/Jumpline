@@ -1,0 +1,28 @@
+.c-mobile-navigation {
+  position: fixed;
+  background: #000;
+  top: 0;
+  right: -260px;
+  height: 100%;
+  width: 260px;
+  box-sizing: border-box;
+  padding: 26px 25px;
+  z-index: 8000;
+  transition: $transition-in;
+  text-align: center;
+
+  li {
+    display: block;
+    margin-bottom: 8px;
+
+    a {
+      font: 300 18px $siteFont;
+      color: #fff;
+    }
+  }
+
+  &.is-open {
+    transition: $transition-out;
+    transform: translateX(-260px);
+  }
+}

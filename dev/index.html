@@ -9,7 +9,17 @@
 </head>
 
 <body>
+  <div  class="c-mobile-navigation js-mobile-navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="program_firefighters.html">Program</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="get_involved.html">Get Involved</a></li>
+  </ul>
+</div>
+<div class="l-site-wrapper js-site-wrapper">
 	<header class="l-band u-black">
+
 		<!-- LOGO SVG  -->
 		<a href="index.html">
 		<svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="215.7px" height="60.7px" viewBox="0 0 215.7 60.7" style="enable-background:new 0 0 215.7 60.7;" xml:space="preserve">
@@ -95,17 +105,25 @@
 		</g>
 		</svg>
 		</a>
-		<nav class="main-navigation">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="program_firefighters.html">Program</a></li>
-				<li><a href="team.html">Team</a></li>
-				<li><a class="c-btn alt" href="get_involved.html">Get Involved</a></li>
-			</ul>
-		</nav>
+    <nav class="main-navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="program_firefighters.html">Program</a>
+          <ul class="main-navigation__sub-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Firefighters</a></li>
+            <li><a href="#">Military & Veterans</a></li>
+            <li><a href="#">Police</a></li>
+          </ul>
+        </li>
+        <li><a href="team.html">Team</a></li>
+        <li class="no-padding"><a class="c-btn alt" href="get_involved.html">Get Involved</a></li>
+      </ul>
+    </nav>
 		<nav class="mobile-navigation">
 			<!-- HAMBURGER ICON SVG  -->
-			<svg class="hamburger_icrighton" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="30px" height="20.3px" viewBox="0 0 30 20.3" style="enable-background:new 0 0 30 20.3;" xml:space="preserve">
+			<svg class="hamburger_icrighton js-nav-toggle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="30px" height="20.3px" viewBox="0 0 30 20.3" style="enable-background:new 0 0 30 20.3;" xml:space="preserve">
 			<style type="text/css">
 				.st0{fill:#FFFFFF;}
 			</style>
@@ -554,6 +572,8 @@
 		</footer>
 
 	</div>
+</div>
+	<script src="js/site.js"></script>
 </body>
 
 </html>
