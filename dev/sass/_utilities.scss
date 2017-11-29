@@ -24,6 +24,10 @@
   display: inline-block; 
 }
 
+.u-extra-margin-top {
+  margin-top: 40px; 
+}
+
 //DEFINE SITE COLORATION
 
 .u-red, .u-blue, .u-gold {
@@ -101,6 +105,7 @@ $jump_gold: #867349;
 .u-subtitle {
   font-size: 20px;
   font-weight: 300;
+  display: block;
 
 }
 

@@ -210,6 +210,7 @@
   width: 100%;
   padding: 0;
   overflow: hidden;
+  float: left;
   div {
     width: 100%;
     padding: 0;
@@ -316,7 +317,37 @@
   }
 }
 
-.proven-results {}
+.proven-results {
+  
+  h2, .u-subtitle {
+    text-align: center;
+    
+    @media #{$small} {
+      text-align: left;
+    }
+  }
+  
+  .l-half-left, .l-half-right {
+    margin-top: 80px; 
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    
+    @media #{$small} {
+      padding-left: 8%;
+      padding-right: 8%;
+    }
+    
+    .logo-contain {
+      margin-bottom: 32px; 
+      height: 80px;
+      
+      img {
+        width: 280px; 
+      }
+    }
+  }
+}
 
 .programs {
   padding-top: 80px; 
