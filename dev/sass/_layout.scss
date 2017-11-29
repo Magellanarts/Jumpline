@@ -549,12 +549,16 @@ svg.l-inline-svg {
 
 header {
   padding-top: 16px!important;
-  padding-bottom: 0!important;
+  padding-bottom: 16px!important;
   width: 100%;
   display: flex !important;
   justify-content: space-between;
   box-sizing: border-box;
   position: relative;
+
+  @media #{$medium} {
+    padding-bottom: 0!important;
+  }
 
   svg.logo {
     width: 184px; 
@@ -582,7 +586,7 @@ header {
       position: relative;
       margin-left: 48px;
       white-space: nowrap;
-      padding-bottom: 43px;
+      padding-bottom: 40px;
 
       &.no-padding {
         padding-bottom:0;
@@ -609,7 +613,7 @@ header {
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    top: 61px;
+    top: 58px;
     left: 50%;
     margin-left: -110px;
     background: $jump_red;
