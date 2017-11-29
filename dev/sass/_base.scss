@@ -131,3 +131,31 @@ ul, li {
   margin: 0;
 }
 
+.std-form {
+  font-family: $siteFont;
+  input {
+    box-sizing: border-box;
+    font-family: $siteFont;
+    display: block;
+    width: 100%;
+    border-radius: $border-radius;
+    border: 1px solid #dedede;
+    padding: 8px 10px;
+
+    &.error {
+      border-color: $jump_red;
+    }
+  }
+
+  button {
+    -webkit-appearance: none;
+    border: none !important;
+    color: #fff !important;
+    font-family: $siteFont;
+    cursor: pointer;
+  }
+}
+
+.std-form__field {
+  margin-bottom:16px;
+}

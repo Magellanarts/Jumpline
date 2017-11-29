@@ -9,6 +9,15 @@
 	</head>
 
 <body>
+	<div class="c-mobile-navigation js-mobile-navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="program_firefighters.html">Program</a></li>
+			<li><a href="team.html">Team</a></li>
+			<li><a href="get_involved.html">Get Involved</a></li>
+		</ul>
+	</div>
+	<div class="l-site-wrapper js-site-wrapper">
 	<header class="l-band u-black">
 		<!-- LOGO SVG  -->
 		<a href="index.html">
@@ -105,7 +114,7 @@
 		</nav>
 		<nav class="mobile-navigation">
 			<!-- HAMBURGER ICON SVG  -->
-			<svg class="hamburger_icrighton" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="30px" height="20.3px" viewBox="0 0 30 20.3" style="enable-background:new 0 0 30 20.3;" xml:space="preserve">
+			<svg class="hamburger_icrighton js-nav-toggle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="30px" height="20.3px" viewBox="0 0 30 20.3" style="enable-background:new 0 0 30 20.3;" xml:space="preserve">
 			<style type="text/css">
 				.st0{fill:#FFFFFF;}
 			</style>
@@ -134,7 +143,39 @@
 				<p>Fire department? Police department? Tactical Team? Government agency? We can help you roll out the Jumpline High Performance program to your teams and engage them in improving mental and physical performance.</p>
 				
 				<div class="c-form">
-					<span style="color: red">"DROP FORM CODE HERE, PLEASE!</span>
+					<form name="contact-form" class="std-form">
+						<div class="std-form__field">
+							<label class="u-screenreader">First Name</label>
+							<input type="text" name="first-name" placeholder="First Name">
+						</div>
+
+						<div class="std-form__field">
+							<label class="u-screenreader">Last Name</label>
+							<input type="text" name="last-name" placeholder="Last Name">
+						</div>
+
+						<div class="std-form__field">
+							<label class="u-screenreader">Email</label>
+							<input type="email" name="email" placeholder="Email">
+						</div>
+
+						<div class="std-form__field">
+							<label class="u-screenreader">Phone Number</label>
+							<input type="tel" name="phone-number" placeholder="Phone Number">
+						</div>
+
+						<div class="std-form__field">
+							<label class="u-screenreader">I'm interested in...</label>
+							<select class="js-selectize" name="interested-in">
+								<option value="">I'm interested in...</option>
+								<option value="News">News</option>
+								<option value="Feedback">Feedback</option>
+							</select>
+						</div>
+
+						<button type="submit" class="c-btn alt" value="Submit">Submit</button>
+
+					</form>
 				</div>
 			</div>
 		</section>
@@ -236,6 +277,108 @@
 			</div>
 		</footer>
 	</div>
+	</div>
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/lib/selectize.js"></script>
+	<script src="js/site.js"></script>
+	<script>
+		var data;
+		document.querySelector('[name=contact-form]').addEventListener('submit', function(event){
+			var errors = false;
+		  data = serialize(this);
+
+		  //reset errors
+			if(doc.querySelector('.error')) {
+        doc.querySelector('.error').classList.remove('error');
+			}
+      if(doc.querySelector('.selectize-input.error')) {
+        doc.querySelector('.selectize-input.error').classList.remove('error');
+      }
+
+		  for(var i = 0; i < data.length; i++){
+		    if(data[i]['name'] !== '') {
+
+		      if(!data[i]['value']) {
+		        //if there is no value, add error class and set errors flag
+		        errors = true;
+		        doc.querySelector('[name=' + data[i]['name'] + ']').classList.add('error');
+		        //if the select has an error, we need to apply the error class to a different element
+		        if(data[i]['name'] == 'interested-in') {
+              doc.querySelector('.selectize-input').classList.add('error');
+						}
+					}
+				}
+			}
+
+			if(!errors) {
+        var request = new XMLHttpRequest();
+        request.open('GET', 'form-submit.php', true);
+        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+
+
+
+        request.onreadystatechange = function() {
+         	console.log(request);
+        };
+
+        request.send(data);
+			}
+
+
+		  event.preventDefault();
+		  return false;
+		});
+
+
+    var serialize = (function (slice) {
+      return function (form) {
+        //no form, no serialization
+        if (form == null)
+          return null;
+
+        //get the form elements and convert to an array
+        return slice.call(form.elements)
+          .filter(function (element) {
+            //remove disabled elements
+            return !element.disabled;
+          }).filter(function (element) {
+            //remove unchecked checkboxes and radio buttons
+            return !/^input$/i.test(element.tagName) || !/^(?:checkbox|radio)$/i.test(element.type) || element.checked;
+          }).filter(function (element) {
+            //remove <select multiple> elements with no values selected
+            return !/^select$/i.test(element.tagName) || element.selectedOptions.length > 0;
+          }).map(function (element) {
+            switch (element.tagName.toLowerCase()) {
+              case 'checkbox':
+              case 'radio':
+                return {
+                  name: element.name,
+                  value: element.value === null ? 'on' : element.value
+                };
+              case 'select':
+                if (element.multiple) {
+                  return {
+                    name: element.name,
+                    value: slice.call(element.selectedOptions)
+                      .map(function (option) {
+                        return option.value;
+                      })
+                  };
+                }
+                return {
+                  name: element.name,
+                  value: element.value
+                };
+              default:
+                return {
+                  name: element.name,
+                  value: element.value || ''
+                };
+            }
+          });
+      }
+    }(Array.prototype.slice));
+	</script>
 </body>
 
 </html>
