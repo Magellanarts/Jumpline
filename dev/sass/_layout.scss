@@ -375,6 +375,20 @@
   }
 }
 
+.gravity-home__header {
+  height: 180px;
+
+  .slick-list,
+  .slick-slider{
+    width: 100%;
+    margin: 0;
+  }
+
+  @media #{$medium} {
+    height: 300px;
+  }
+}
+
 .gravity-interior {
   background: $black!important;
   @media #{$medium} {

@@ -139,7 +139,12 @@
 
 		<section class="l-band gravity-home u-black">
 			<div class="l-half-left">
-				<h1>Driving Purpose &amp; Performance</h1>
+				<div class="gravity-home__header">
+					<div class="js-home-gravity-carousel">
+						<h1 class="js-type-me"></h1>
+					</div>
+				</div>
+
 				<p>Preparing first responders and tactical athletes with mental fortitude for crucial, time-critical situations. <a href="#">Learn More</a></p>
 			</div>
 		</section>
@@ -608,6 +613,7 @@
 </div>
 	<script src="js/lib/jquery.js"></script>
 	<script src="js/lib/slick.js"></script>
+	<script src="js/lib/typed/typed.js"></script>
 	<script>
 		//initialize slider
 		jQuery('.js-simple-carousel').each(function(){
@@ -622,7 +628,15 @@
 				}, 150);
 		});
 
-
+    var typed = new Typed('.js-type-me', {
+      strings: ["Where do you want to go?", "BUILDING SITUATIONAL AWARENESS", "MAKING RESILIENCY A HABIT"],
+      typeSpeed: 50,
+      startDelay: 100,
+      loop: true,
+      autoInsertCss: true,
+      fadeOutDelay: 2000,
+      fadeOut: true
+    });
 		//logo slider
 		jQuery('.js-carousel').slick({
       infinite: true,
@@ -655,6 +669,19 @@
         }
       ]
 		});
+
+
+		//gravity slider
+		jQuery('.js-home-gravity-carousel').slick({
+			slide: 'h1',
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+			arrows: false,
+      slidesToShow: 1
+		});
+
 	</script>
 	<script src="js/site.js"></script>
 </body>
