@@ -162,7 +162,8 @@ ul, li {
     transition: $transition-out;
   }
 
-  input {
+  input,
+  textarea {
     box-sizing: border-box;
     font-family: $siteFont;
     display: block;
