@@ -243,13 +243,13 @@
 					<label class="u-text-align-center" for="tab1">Approach</label>
 
 					<input type="radio" name="tabs" id="tab2">
-					<label class="u-text-align-center" for="tab2">Delivery</label>
+					<label data-index="0" class="u-text-align-center" for="tab2">Delivery</label>
 
 					<input type="radio" name="tabs" id="tab3">
 					<label class="u-text-align-center" for="tab3">History</label>
 
 					<input type="radio" name="tabs" id="tab4">
-					<label class="u-text-align-center" for="tab4">Engagement</label>
+					<label data-index="1" class="u-text-align-center" for="tab4">Engagement</label>
 
 					<div class="c-tab" id="approach-tab">
 						<div class="l-half-left">
@@ -284,7 +284,10 @@
 								<p>The entirety of JHP’s programming is delivered through mobile technology, across iPhone or Google-based operating systems. The idea is to have our program in the hands of first responders or veterans for use whenever and wherever it is convenient for them to participate. It allows them to track and record every piece of data that comes out of the program and share their experiences and encouragement with the rest of the JHP community.</p>
 							</div>
 							<div class="l-half-right">
-								<p>right</p>
+								<div class="js-simple-carousel is-hidden">
+									<img src="i/bio_pic_dave.jpg">
+									<img src="i/bio_pic_maryellen.jpg">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -452,7 +455,10 @@
 								<p class="u-bold">Our population specific engagement system utilizes a three-pronged approach that includes: Email Connectivity, Social Media, and a Lifestyle Blog.</p>
 							</div>
 							<div class="l-half-right">
-								<p>right</p>
+								<div class="js-simple-carousel is-hidden">
+									<img src="i/bio_pic_dave.jpg">
+									<img src="i/bio_pic_maryellen.jpg">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -585,6 +591,22 @@
 
 	</div>
 </div>
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/lib/slick.js"></script>
+	<script>
+		//initialize slider
+		jQuery('.js-simple-carousel').each(function(){
+		  jQuery(this).slick();
+    });
+
+		jQuery('.c-tabs label').on('click', function(){
+				var slider = jQuery('.js-simple-carousel').eq(jQuery(this).attr('data-index'));
+        slider.slick("getSlick").resize();
+        setTimeout(function(){
+          slider.removeClass('is-hidden');
+				}, 150);
+		});
+	</script>
 	<script src="js/site.js"></script>
 </body>
 
