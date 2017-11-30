@@ -357,7 +357,7 @@
   }
 }
 
-.gravity-home, .footer, .gravity-interior {
+.gravity-home, .footer, .gravity-interior, .gravity-team {
   background: $black!important;
   padding-bottom: 120px;
   padding-top: 96px;
@@ -376,8 +376,19 @@
 }
 
 .gravity-interior {
-  background: url("i/gravity_interior.jpg") no-repeat bottom center!important;
-    background-size: cover!important; 
+  background: $black!important;
+  @media #{$medium} {
+    background: url("i/gravity_interior.jpg") no-repeat bottom center!important;
+    background-size: cover!important;
+  }
+}
+
+.gravity-team {
+  background: $black!important;
+  @media #{$medium} {
+    background: url("i/header2_team.jpg") no-repeat bottom center!important;
+    background-size: cover!important;
+  }
 }
 
 .gravity-home {
@@ -390,7 +401,7 @@
   }
   
   @media #{$medium} {
-    background: url("i/gravity_test.jpg") no-repeat bottom center!important;
+    background: url("i/gravity_home.jpg") no-repeat bottom center!important;
     background-size: cover!important;
     padding-bottom: 176px;
     padding-top: 120px;
@@ -595,11 +606,42 @@
   }
   
   @media #{$medium} {
-    background: url("i/footer_test.jpg") no-repeat bottom center!important;
+    background: url("i/footer_main.jpg") no-repeat bottom center!important;
     background-size: cover!important;
     padding-bottom: 176px;
     padding-top: 120px;
   }
+}
+
+.custom-fire, .custom-military, .custom-police {
+  background: $black!important;
+  
+  .l-half-right {
+    margin-bottom: 80px;
+    
+    @media #{$small} {
+      margin-bottom: 0;  
+    }
+  } 
+}
+
+.custom-fire {
+  @media #{$large} {
+    background: url("i/landing_image2_fire.jpg") no-repeat bottom center!important;
+    background-size: cover!important;
+  } 
+}
+.custom-military {
+  @media #{$large} {
+    background: url("i/landing_image2_military.jpg") no-repeat bottom center!important;
+    background-size: cover!important;
+  }   
+}
+.custom-police {
+  @media #{$large} {
+    background: url("i/landing_image2_police.jpg") no-repeat bottom center!important;
+    background-size: cover!important;
+  }   
 }
 
 .c-btn_icon {
@@ -859,6 +901,11 @@ header {
     width: 160px!important;
     margin-bottom: 16px;
   }
+}
+
+body, .u-white {
+  background: url("i/bg_texture.gif") repeat-y top right!important;
+  background-size: 100%!important;
 }
 
 
