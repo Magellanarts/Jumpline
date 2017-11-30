@@ -375,6 +375,11 @@
   }
 }
 
+.gravity-interior {
+  background: url("i/gravity_interior.jpg") no-repeat bottom center!important;
+    background-size: cover!important; 
+}
+
 .gravity-home {
   
   padding-bottom: 40px;
@@ -392,24 +397,80 @@
   }
 }
 
+
+//PROGRAM - FIRE
+
 .gravity-fire {
   background: $jump_red!important;
   overflow: hidden;
   padding-bottom: 64px;
 
+  
+  @media #{$medium} {
+    background: url("i/gravity_fire.jpg") no-repeat bottom center!important;
+    background-size: cover!important;
+    padding-bottom: 176px;
+    padding-top: 120px;
+  }
+  
+    
+}
+
+//END PROGRAM - FIRE
+
+
+//PROGRAM - POLICE
+
+.gravity-police {
+  background: $jump_blue!important;
+  overflow: hidden;
+  padding-bottom: 64px;
+
+  
+  @media #{$medium} {
+    background: url("i/gravity_police.jpg") no-repeat bottom center!important;
+    background-size: cover!important;
+    padding-bottom: 176px;
+    padding-top: 120px;
+  }
+  
+    
+}
+
+//END PROGRAM - POLICE
+
+//PROGRAM - MILITARY
+
+.gravity-military {
+  background: $jump_gold!important;
+  overflow: hidden;
+  padding-bottom: 64px;
+
+  
+  
+  @media #{$medium} {
+    background: url("i/gravity_military.jpg") no-repeat bottom center!important;
+    background-size: cover!important;
+    padding-bottom: 176px;
+    padding-top: 120px;
+  }
+  
+    
+}
+
+//END PROGRAM - FIRE
+
+
+
+//PROGRAM GRAVITIES
+
+.gravity-military, .gravity-fire, .gravity-police {
   p {
     margin-bottom: 0; 
   }
   
   h2 {
     margin-top: 0; 
-  }
-  
-  @media #{$medium} {
-    background: url("i/fire-gravity_test.jpg") no-repeat bottom center!important;
-    background-size: cover!important;
-    padding-bottom: 176px;
-    padding-top: 120px;
   }
   
   .l-half-left {
@@ -436,7 +497,7 @@
         height: 100%;
       }
     }
-  }  
+  }
 }
 
 .mobile-gravity-image {
