@@ -489,6 +489,19 @@
 		<section class="l-band who-we-work-with u-grey edge--bottom--reverse">
 			<div class="l-contain">
 				<h2 class="u-text-align-center">Who We Work With</h2>
+
+				<div class="js-carousel">
+					<img src="i/logo_circle.svg">
+					<img src="i/logo_circle.svg">
+					<img src="i/logo_circle.svg">
+					<img src="i/logo_circle.svg">
+					<img src="i/logo_circle.svg">
+					<img src="i/logo_circle.svg">
+					<img src="i/logo_circle.svg">
+					<img src="i/logo_circle.svg">
+					<img src="i/logo_circle.svg">
+					<img src="i/logo_circle.svg">
+				</div>
 			</div>
 		</section>
 
@@ -605,6 +618,40 @@
         setTimeout(function(){
           slider.removeClass('is-hidden');
 				}, 150);
+		});
+
+
+		//logo slider
+		jQuery('.js-carousel').slick({
+      infinite: true,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 380,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
 		});
 	</script>
 	<script src="js/site.js"></script>
