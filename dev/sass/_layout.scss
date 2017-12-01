@@ -378,6 +378,10 @@
 .gravity-home__header {
   height: 180px;
 
+  h1 {
+    height: 180px;
+  }
+
   .slick-list,
   .slick-slider{
     width: 100%;
@@ -385,9 +389,15 @@
   }
 
   @media #{$medium} {
-    height: 300px;
+    height: 280px;
+
+    h1 {
+      height: 280px;
+    }
   }
 }
+
+
 
 .gravity-interior {
   background: $black!important;
@@ -922,4 +932,10 @@ body, .u-white {
   background-size: 100%!important;
 }
 
+
+.logo-carousel {
+  img {
+    padding: 0 15px;
+  }
+}
 

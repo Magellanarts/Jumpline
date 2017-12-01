@@ -147,9 +147,7 @@
 		<section class="l-band gravity-home u-black">
 			<div class="l-half-left">
 				<div class="gravity-home__header">
-					<div class="js-home-gravity-carousel">
-						<h1 class="js-type-me"></h1>
-					</div>
+						<h1 class="gravity-home__header__headings js-type-me"></h1>
 				</div>
 
 				<p>Preparing first responders and tactical athletes with mental fortitude for crucial, time-critical situations. <a href="#">Learn More</a></p>
@@ -504,7 +502,7 @@
 			<div class="l-contain">
 				<h2 class="u-text-align-center">Who We Work With</h2>
 
-				<div class="js-carousel">
+				<div class="js-carousel logo-carousel">
 					<img src="i/logo_circle.svg">
 					<img src="i/logo_circle.svg">
 					<img src="i/logo_circle.svg">
@@ -632,32 +630,27 @@
         slider.slick("getSlick").resize();
         setTimeout(function(){
           slider.removeClass('is-hidden');
-				}, 150);
+				}, 250);
 		});
 
     var typed = new Typed('.js-type-me', {
-      strings: ["Where do you want to go?", "BUILDING SITUATIONAL AWARENESS", "MAKING RESILIENCY A HABIT"],
-      typeSpeed: 50,
+      strings: ["Where do<br> you want<br> to go?", "BUILDING<br> SITUATIONAL<br> AWARENESS", "MAKING<br> RESILIENCY<br> A HABIT"],
+      typeSpeed: 40,
       startDelay: 100,
       loop: true,
       autoInsertCss: true,
-      fadeOutDelay: 2000,
+      fadeOutDelay: 500,
       fadeOut: true
     });
 		//logo slider
 		jQuery('.js-carousel').slick({
       infinite: true,
-			slidesToShow: 5,
+			slidesToShow: 4,
 			slidesToScroll: 1,
       responsive: [
+
         {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 4
-          }
-        },
-        {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
             slidesToShow: 3
           }
@@ -675,18 +668,6 @@
           }
         }
       ]
-		});
-
-
-		//gravity slider
-		jQuery('.js-home-gravity-carousel').slick({
-			slide: 'h1',
-      infinite: true,
-      speed: 500,
-      fade: true,
-      cssEase: 'linear',
-			arrows: false,
-      slidesToShow: 1
 		});
 
 	</script>
