@@ -211,6 +211,10 @@
   padding: 0;
   overflow: hidden;
   float: left;
+  
+  &.advisors {
+    margin-top: 0; 
+  }
   div {
     width: 100%;
     padding: 0;
@@ -919,7 +923,7 @@ header {
     margin: 0 0 80px;
     
     @media #{$medium} {
-      margin: 0;
+      margin: 0 0 40px;
     }
   }
   
