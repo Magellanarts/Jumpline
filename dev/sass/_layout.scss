@@ -15,10 +15,10 @@
   padding: 80px 6% 40px;
   box-sizing: border-box;
   @media #{$small} {
-    padding: 80px 6% 160px;
+    padding: 80px 6% 80px;
   }
-  @media #{$xl} {
-    padding: 80px 12% 160px;
+  @media #{$large} {
+    padding: 80px 12% 136px;
   }
 }
 
@@ -91,7 +91,7 @@
   width: 100%;
   display: block;
   margin-bottom: 72px;
-  @media #{$large} {
+  @media #{$medium} {
     width: 50%;
     margin-bottom: 0;
   }
@@ -104,7 +104,7 @@
 .l-half-left {
   padding-right: 0;
   float:none;
-  @media #{$large} {
+  @media #{$medium} {
     padding-right: 8%;
     float: left;
   }
@@ -113,7 +113,7 @@
 .l-half-right {
   padding-left: 0;
   float: none;
-  @media #{$large} {
+  @media #{$medium} {
     padding-left: 2%;
     float: right;
   }
@@ -365,8 +365,8 @@
 
 .gravity-home, .footer, .gravity-interior, .gravity-team {
   background: $black!important;
-  padding-bottom: 120px;
-  padding-top: 96px;
+  padding-bottom: 80px;
+  padding-top: 64px;
   overflow: hidden; 
   
   .l-half-left {
@@ -524,21 +524,6 @@
       padding-right: 8%;
     } 
   }
-  
-  .l-half-right {
-    padding: 0;
-    
-    div {
-      width: 80px;
-      
-      svg {
-        width: 100%;
-        display: block;
-        text-align: right;
-        height: 100%;
-      }
-    }
-  }
 }
 
 .mobile-gravity-image {
@@ -570,7 +555,7 @@
     border: none;
     background: rgba(255,255,255,0.1);
     color: rgba(255,255,255,1);
-    font-weight: 400;
+    font-weight: 300!important;
     text-transform: none;
     padding: 14px 24px 15px;
     float: left;
@@ -609,7 +594,7 @@
     width: 48px;
     
     @media #{$small} {
-      margin: -16px 0 0 -16px;
+      margin: -16px 16px 0 0;
     }
     
     svg {
@@ -656,19 +641,19 @@
 }
 
 .custom-fire {
-  @media #{$large} {
+  @media #{$medium} {
     background: url("i/landing_image2_fire.jpg") no-repeat bottom center!important;
     background-size: cover!important;
   } 
 }
 .custom-military {
-  @media #{$large} {
+  @media #{$medium} {
     background: url("i/landing_image2_military.jpg") no-repeat bottom center!important;
     background-size: cover!important;
   }   
 }
 .custom-police {
-  @media #{$large} {
+  @media #{$medium} {
     background: url("i/landing_image2_police.jpg") no-repeat bottom center!important;
     background-size: cover!important;
   }   
@@ -856,7 +841,28 @@ header {
   .c-team-member {
     
     margin: 0 0 80px;
-  
+    width: 100%;
+    float: none;
+    box-sizing: border-box;
+    padding: 0;
+    
+    @media screen and (min-width : 720px) {
+      width: 50%;
+      float: left;
+      padding-right: 0;
+      padding-left: 4%;
+      
+      &:nth-child(odd) {
+        clear: left;
+        padding-left: 0;
+        padding-right: 4%;
+      }
+    }
+    @media #{$medium} {
+      width: 100%;
+      float: none;
+      padding: 0!important;
+    }
     
     .c-team-member-image {
       width: 200px;
@@ -909,7 +915,7 @@ header {
         float: left;
         padding-right: 0;
         
-        @media #{$medium} {
+        @media #{$large} {
           padding-right: 40px;
           padding-left: 0;
         }
@@ -919,11 +925,45 @@ header {
 }
 .advisors {
   
-  .c-team-member {
+  .c-advisor {
     margin: 0 0 80px;
     
     @media #{$medium} {
       margin: 0 0 40px;
+    }
+    
+    h3 {
+      margin-bottom: 0; 
+    }
+    .u-subtitle {
+      color: $jump_red;
+      margin: 8px 0 24px 0;
+      display: block;
+      font-size: 16px;
+    }
+    .l-one-third {
+      float: none; 
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 40px;
+      text-align: left;
+      
+      @media #{$medium} {
+        float: left; 
+        width: 33.333333333%;
+        text-align: center;
+      }
+    }
+    .l-two-third {
+      float: none;
+      width: 100%;
+      box-sizing: border-box;
+      padding-left: 0;
+      @media #{$medium} {
+        float: right;
+        width: 66.666666667%;
+        padding-left: 40px;
+      }
     }
   }
   
@@ -1011,25 +1051,26 @@ body, .u-white {
 }
 
 .sponsor_btn {
-  
-    .c-btn {
-      border: none!important;
-      background: $jump_blue;
-      color: $white!important;
-      font-weight: 400;
-      text-transform: none;
-      padding: 14px 24px 15px;
-      float: left;
-      clear: left;
-      font-size: 12px;
-      line-height: 16px;
-      width: 220px;
-      text-align: left;
-      margin-top: 0;
-      
-      .c-btn_icon {
-        width: 40px;  
-      }
+  display: block;
+  overflow: hidden;
+  margin-bottom: 40px;
+  .c-btn {
+    border: none!important;
+    background: $jump_blue;
+    color: $white!important;
+    font-weight: 400;
+    text-transform: none;
+    padding: 14px 24px 15px;
+    float: left;
+    clear: left;
+    font-size: 12px;
+    line-height: 16px;
+    width: 220px;
+    text-align: left;
+    margin-top: 0;
+    .c-btn_icon {
+      width: 40px;  
+    }
   }
 }
 }
@@ -1048,6 +1089,17 @@ body, .u-white {
         color: rgba(255,255,255,0.75)!important; 
       }
     }
+  }
+  &:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 12px 0 12px;
+    border-color: #000000 transparent transparent transparent;
+    top: 0;
+    position: absolute;
+    right: 98px;
   }
 }
 
@@ -1079,4 +1131,60 @@ body, .u-white {
     }
     
   }
+}
+
+.c-gravity-badge {
+  display: block;
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+  
+  img {
+    width: 200px; 
+  }
+  
+  @media #{$medium} {
+    float: right;
+  margin-right: 15%;
+    text-align: right;
+  }
+}
+
+.who-we-work-with {
+  .logo-carousel {
+    margin-top: 64px; 
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    
+    img {
+      filter: grayscale(100%);
+      transition: all .1s linear;
+      
+      &:hover {
+        filter: grayscale(0); 
+        transition: all .1s linear;
+      }
+    }
+    @media #{$medium} {
+      width: 80%; 
+    }
+  }
+}
+.delivery-svg-holder {
+  svg {
+    width: 80px;
+    height: 100%;
+    float: right;
+    margin-right: 40px;
+    margin-top: 16px;
+    
+    &:first-child {
+      margin-top: 30px; 
+    }
+  }
+}
+
+.std-form input, .std-form textarea, .selectize-input {
+  padding: 16px 10px;
 }
