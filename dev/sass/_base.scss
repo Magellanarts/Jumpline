@@ -55,10 +55,17 @@ h1 {
   line-height: 56px;
   margin: 0 0 16px 0; 
   
-  @media #{$medium} { 
+    
+  @media #{$medium} {
+    font-size: 80px;
+    line-height: 72px;
+  }
+  
+  @media #{$custom_1} { 
     font-size: 96px;
     line-height: 88px;
   }
+
 }
 
 h2 {

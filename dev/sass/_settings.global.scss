@@ -4,9 +4,11 @@ $siteFont_alt: 'Saira Extra Condensed', sans-serif;
 
 
 //Media Queries
-$small:  "screen and (min-width : 480px)";
+$small:  "screen and (min-width : 600px)";
 $medium: "screen and (min-width : 1024px)";
 $large: "screen and (min-width : 1440px)";
+
+$custom_1: "screen and (min-width : 640px)";
 
 //Misc
 $border-radius: 3px;

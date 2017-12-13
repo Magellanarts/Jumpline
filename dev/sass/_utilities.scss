@@ -1,115 +1,148 @@
 .u-text-align-center {
-  text-align: center;
+	text-align: center;
 }
+
 .u-text-align-left {
-  text-align: left;
+	text-align: left;
 }
 
 .u-align-self--center {
-  align-self: center;
+	align-self: center;
 }
 
 .u-bold {
-  font-weight: 800; 
+	font-weight: 800;
 }
 
 .u-small-text {
-  font-size: 12px;
-  line-height: 16px;
-  color: $jump_light-grey;
+	font-size: 12px;
+	line-height: 16px;
+	color: $jump_light-grey;
 }
 
 .u-circle {
-  border-radius: 50%;
-  display: inline-block; 
+	border-radius: 50%;
+	display: inline-block;
 }
 
 .u-extra-margin-top {
-  margin-top: 64px; 
+	margin-top: 64px;
 }
 
 //DEFINE SITE COLORATION
-
-.u-red, .u-blue, .u-gold {
-  h1,h2,h3,p,a {
-    color: $white; 
-  }
+.u-red,
+.u-blue,
+.u-gold {
+	h1,
+	h2,
+	h3,
+	p,
+	a {
+		color: $white;
+	}
 }
 
 .u-blue {
-  background: $jump_blue;
+	background: $jump_blue;
 }
 
 .u-gold {
-  background: $jump_gold;
+	background: $jump_gold;
 }
 
 .u-red {
-  background: $jump_red;
+	background: $jump_red;
 }
+.u-red-text {
+	color: $jump_red!important;
+}
+
 .u-white {
-  background: $white;
-  
-  p,h3 {
-    color: $black; 
-  }
-  
-  a,h1,h2 {
-    color: $jump_red;
-    
-    &.inverse {
-      color: $black; 
-    }
-  }
-  
-  .c-btn {
-    border: 1px solid rgba(0,0,0,1);
-    color: rgba(0,0,0,1);
-    
-    &:hover {
-      border: 1px solid rgba(0,0,0,0.75); 
-      color: rgba(0,0,0,0.75);
-    }
-  }
+	background: $white;
+	p,
+	h3 {
+		color: $black;
+	}
+	a,
+	h1,
+	h2 {
+		color: $jump_red;
+		&.inverse {
+			color: $black;
+		}
+	}
+	.c-btn {
+		border: 1px solid rgba(0, 0, 0, 1);
+		color: rgba(0, 0, 0, 1);
+		&:hover {
+			border: 1px solid rgba(0, 0, 0, 0.75);
+			color: rgba(0, 0, 0, 0.75);
+		}
+	}
 }
+
 .u-black {
-  background: $black;
-  
-  p {
-    color: rgba(255,255,255,.4);
-  }
-  
-  a {
-    color: $jump_red;
-    
-    &:hover {
-      color: $jump_dark-red; 
-    }
-  }
-  
-  h1,h2 {
-    color: $white; 
-  }
+	background: $black;
+	.percentages {
+		color: $white!important;
+		span {
+			color: rgba(255,255,255,0.35)!important;
+			&.percentage {
+				color: $white!important;
+			}
+		}
+	}
+	p {
+		color: rgba(255, 255, 255, .4);
+	}
+	a {
+		color: $jump_red;
+		&:hover {
+			color: $jump_dark-red;
+		}
+	}
+	h1,
+	h2 {
+		color: $white;
+	}
+	h2 {
+		&.alt {
+			text-align: center;
+			position: relative;
+			display: block;
+			margin: 0 0 8px 0;
+			color: $white;
+			span {
+				margin: 0 auto;
+				position: relative;
+				background: $black;
+				padding: 0 3.5%;
+				z-index: 900;
+				display: inline-block;
+			}
+			&:after {
+				background: $white;
+			}
+		}
+	}
 }
+
 .u-grey {
-  background: $jump_grey; 
-  
-  h2 {
-    color: $white;
-  }
+	background: $jump_grey;
+	h2 {
+		color: $white;
+	}
 }
 
 .u-subtitle {
-  font-size: 20px;
-  font-weight: 300;
-  display: block;
-
+	font-size: 20px;
+	font-weight: 300;
+	display: block;
 }
 
 .u-screenreader {
-  display: none;
-
-  @media speech {
-    display: block;
-  }
+	display: none;
+	@media speech {
+		display: block;
+	}
 }
