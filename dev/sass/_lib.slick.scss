@@ -143,3 +143,32 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+.slick-dots {
+  font-size: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+
+    &.slick-active {
+      button {
+        background: #fff;
+      }
+    }
+  }
+  button {
+    text-indent: -9999px;
+    border: none;
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    display: block;
+    -webkit-appearance: none;
+    background: #333;
+  }
+}

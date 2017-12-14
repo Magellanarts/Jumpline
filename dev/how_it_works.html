@@ -205,7 +205,12 @@
 			<section class="l-band u-black c-how-delivery edge--bottom--reverse">
 				<div class="l-contain">
 					<div class="l-half-left">
-						<img src="i/delivery_1.png">
+						<div class="js-carousel">
+							<img src="i/delivery_1.png">
+							<img src="i/delivery_1.png">
+							<img src="i/delivery_1.png">
+						</div>
+
 					</div>
 					<div class="l-half-right">
 						<h2>Mobile Delivery</h2>
@@ -398,6 +403,14 @@
 
 		</div>
 	</div>
+	<script src="js/lib/jquery.js"></script>
+	<script src="js/lib/slick.js"></script>
+	<script>
+		jQuery('.js-carousel').slick({
+			arrows: false,
+			dots: true
+		});
+	</script>
 	<script src="js/site.js"></script>
 </body>
 
