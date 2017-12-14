@@ -80,6 +80,9 @@
 		}
 	}
 }
+.u-white-text {
+	color: $white!important;
+}
 
 .u-black {
 	background: $black;
@@ -126,7 +129,9 @@
 		}
 	}
 }
-
+.u-black-text {
+	color: $black!important;
+}
 .u-grey {
 	background: $jump_grey;
 	h2 {

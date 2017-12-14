@@ -43,7 +43,7 @@ a {
   }
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,h5 {
   font-family: $siteFont_alt; 
   text-transform: uppercase;
   font-weight: 600;
@@ -53,37 +53,30 @@ h1,h2,h3,h4 {
 h1 {
   font-size: 64px;
   line-height: 56px;
-  margin: 0 0 16px 0; 
-  
-    
+  margin: 0 0 16px 0;
   @media #{$medium} {
     font-size: 80px;
     line-height: 72px;
   }
-  
   @media #{$custom_1} { 
     font-size: 96px;
     line-height: 88px;
   }
-
 }
 
 h2 {
   font-size: 56px;
   line-height: 48px;
   margin: 24px 0 16px 0;
-  
   @media #{$medium} { 
     font-size: 72px;
     line-height: 64px;
   }
-  
   &.alt {
     text-align: center;
     position: relative;
     display: block;
     margin: 0 0 8px 0;
-    
     span {
       margin: 0 auto;
       position: relative;
@@ -92,7 +85,6 @@ h2 {
       z-index: 900;
       display: inline-block;
     }
-    
     &:after {
       content: "";
       position: absolute;
@@ -108,14 +100,12 @@ h2 {
         top: 36px; 
       }
     }
-    
   }
 }
 h3 {
   font-size: 32px;
   line-height: 32px;
   margin: 0 0 24px 0;
-  
   @media #{$medium} { 
     font-size: 40px;
     line-height: 40px; 
@@ -127,7 +117,13 @@ h4 {
   line-height: 32px;
   margin: 0 0 8px 0; 
 }
-
+h5 {
+  font-size: 34px;
+  line-height: 38px;
+  margin: 0 0 8px 0;
+  font-weight: 400;
+  text-transform: none!important;
+}
 p {
   font-weight: 300; 
   font-size: 16px;

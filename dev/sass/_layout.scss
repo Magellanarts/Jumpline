@@ -475,6 +475,16 @@
     display: none;
   }
 }
+.mobile-home-gravity-image {
+   display: block;
+  img {
+    width: 100%;
+    display: block;
+  }
+  @media #{$custom_1} {
+    display: none;
+  }
+}
 .mobile-footer-image, {
   display: block;
   img {
@@ -1138,10 +1148,10 @@ body,
   svg {
     width: 80px;
     height: 100%;
-    float: right;
+    float: left;
     margin-right: 40px;
     margin-top: 16px;
-    &:first-child {
+    &:last-child {
       margin-top: 30px;
     }
   }
@@ -1164,5 +1174,26 @@ body,
   right: 0;
   @media #{$medium} {
     right: -24px; 
+  }
+}
+
+.c-how-intro {
+  .l-half-left {
+    padding-right: 0!important; 
+  }
+}
+.c-how-list {
+  @media #{$medium} {
+    background: url("i/howitworks_image1.jpg") no-repeat bottom left!important;
+    background-size: cover!important;
+  }
+  .l-half-right {
+    padding-left: 0!important; 
+  }
+  padding-top: 200px;
+}
+.c-how-delivery, .c-how-workshops {
+  .l-half-right {
+    padding-left: 0!important; 
   }
 }
