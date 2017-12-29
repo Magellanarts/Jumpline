@@ -11,10 +11,10 @@
 .l-band {
   display: block;
   width: 100%;
-  padding: 80px 6% 40px;
+  padding: 80px 6% 80px;
   box-sizing: border-box;
   @media #{$small} {
-    padding: 80px 6% 80px;
+    padding: 80px 6% 120px;
   }
   @media #{$large} {
     padding: 80px 12% 136px;
@@ -361,6 +361,10 @@
   padding-top: 80px;
   p {
     margin-bottom: 0;
+    padding-right: 0;
+    @media #{$medium} { 
+      padding-right: 8%;
+    }
   }
   @media #{$custom_1} {
     background: url("i/gravity_home.jpg") no-repeat bottom center!important;
@@ -994,7 +998,7 @@ body,
       border: none!important;
       background: $black;
       color: $white!important;
-      font-weight: 400;
+      font-weight: 300;
       text-transform: none;
       padding: 14px 24px 15px;
       float: left;
@@ -1233,7 +1237,7 @@ body,
 }
 
 .c-how-workshops {
-  padding-top: 200px;
+  padding-top: 120px;
   ul {
     margin: 32px 0;
     padding-left: 16px;
@@ -1247,6 +1251,7 @@ body,
   @media #{$medium} {
     background: url("i/howitworks_image2.jpg") no-repeat bottom left!important;
     background-size: cover!important;
+    padding-top: 200px;
   }
 }
 

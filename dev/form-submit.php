@@ -1,5 +1,5 @@
 <?php
-  $to = 'magellanarts@gmail.com';
+  $to = 'maryellen@jumplinehighperformance.com';
   $subject = 'Jumpline Contact Form Submission';
   $headers = "MIME-Version: 1.0" . "\r\n";
   $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
