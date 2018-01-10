@@ -105,6 +105,7 @@
 </div>
 </div>
 
+
 <script src="js/lib/headroom.js"></script>
 <script src="js/site.js"></script>
 
@@ -112,7 +113,7 @@
 $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
 
 //if homepage
-if (strpos($url,'index') !== false) {
+if ((strpos($url,'index') !== false) || $_SERVER['REQUEST_URI'] == '/' || $_SERVER['REQUEST_URI'] == '/dev/') {
 ?>
 <script src="js/lib/jquery.js"></script>
 <script src="js/lib/slick.js"></script>
