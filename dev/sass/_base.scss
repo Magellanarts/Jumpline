@@ -8,11 +8,16 @@ html {
 body {
   text-rendering: optimizeLegibility;
   font-family: $siteFont;
+  padding-top: 96px;
 
   &.no-scroll {
     overflow: hidden;
     height: 100vh;
     max-height: 100vh;
+  }
+
+  @media #{$medium} {
+    padding-top: 93px;
   }
 }
 

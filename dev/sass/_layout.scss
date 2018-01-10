@@ -716,7 +716,16 @@ header {
   display: flex !important;
   justify-content: space-between;
   box-sizing: border-box;
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: $transition-in;
+
+  &.is-open {
+    transform: translateX(-260px);
+    transition: $transition-out;
+  }
+
   @media #{$medium} {
     padding-bottom: 0!important;
   }
@@ -1299,4 +1308,16 @@ body,
     }
     }
   }
+}
+
+
+.headroom {
+  will-change: transform;
+  transition: transform 300ms ease-in;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
 }
