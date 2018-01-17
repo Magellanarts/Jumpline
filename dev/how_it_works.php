@@ -124,13 +124,14 @@
 					<div class="l-half-left">
 						<h2 class="u-black-text">Lifestyle Blog, Email &amp; Social Media</h2>
 						<p>Weekly relevant content delivered via email, social media, and the Waypoint blog help engage our audiences and keep everyone motivated to stay focused on purpose and performance.</p>
-						<!-- <a href="get_involved.php" class="c-btn">Read Waypoint</a> -->
+						<a href="/waypoint/" class="c-btn">Read Waypoint</a>
 					</div>
 					<div class="l-half-right">
 						<img src="i/devices_firstin.png">
 						<div class="social-icons">
-							<a href="#"><img src="i/icons_social_fb.png"></a>
-							<a href="#"><img src="i/icons_social_ig.png"></a>
+							<a target="_blank" href="http://www.facebook.com/jumplinehp"><img src="i/icons_social_fb.png"></a>
+							<a target="_blank" href="http://www.instagram.com/jumplinehp"><img src="i/icons_social_ig.png"></a>
+							<a target="_blank" href="http://www.twitter.com/jumplinehp"><img src="i/icons_social_tw.png"></a>
 						</div>
 					</div>
 				</div>

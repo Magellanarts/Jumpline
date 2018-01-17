@@ -113,6 +113,11 @@
 					</div>
 					<div class="l-half-right">
 						<img src="i/devices_firstin.png">
+						<div class="social-icons">
+							<a target="_blank" href="http://www.facebook.com/jumplinehp"><img src="i/icons_social_fb-white.png"></a>
+							<a target="_blank" href="http://www.instagram.com/jumplinehp"><img src="i/icons_social_ig-white.png"></a>
+							<a target="_blank" href="http://www.twitter.com/jumplinehp"><img src="i/icons_social_tw-white.png"></a>
+						</div>
 					</div>
 				</div>
 			</section>
