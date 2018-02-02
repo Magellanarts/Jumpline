@@ -13,7 +13,7 @@
 				<img src="i/mobileimages/header_mobile_team.jpg">
 			</div>
 			<section class="l-band u-white c-team edge--both--reverse">
-				<!-- <div class="c-team-member l-contain">
+				<div class="c-team-member l-contain">
 					<div class="l-one-third">
 						<img class="u-circle c-team-member-image" src="i/bio_pic_dave.jpg">
 					</div>
@@ -22,7 +22,7 @@
 						<span class="u-subtitle">Executive Director/High Performance Specialist</span>
 						<p>David has over two decades of firefighting experience that spans both wildland firefighting in the southwest, to structure firefighting in the northeast. As founder of the non profit The First Twenty he was the author of the nation&apos;s first ever national fitness and wellness program for firefighters. He served as a health coach for two ground breaking clinical trials in first responder health powered by FEMA and the NIH that covered thousands of first responders coast to coast. David also served as the SME for the development of the U.S.A.F. Firefighter Fitness &amp; Wellness Program for its 11,000 firefighter, and currently serves as a SME for the development of the U.S. Forest Service&apos;s performance program for their over 30,000 firefighters. David was also the 2017 Firefighter Combat Challenge World Champion in the Over 50 Men&apos;s Relay.</p>
 					</div>
-				</div> -->
+				</div>
 
 				<div class="c-team-member l-contain">
 					<div class="l-one-third">
