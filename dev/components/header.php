@@ -25,7 +25,7 @@
       <a>About</a>
       <ul class="sub-menu">
         <li><a href="about_jumpline.php">About Jumpline</a></li>
-        <!-- <li><a href="team.php">Team</a></li> -->
+        <li><a href="team.php">Team</a></li>
       </ul>
     </li>
     <li><a href="/waypoint/">Waypoint</a></li>
@@ -52,7 +52,7 @@
         <a>About</a>
         <ul class="main-navigation__sub-menu">
           <li><a href="about_jumpline.php">About Jumpline</a></li>
-          <!-- <li><a href="team.php">Team</a></li> -->
+          <li><a href="team.php">Team</a></li>
         </ul>
       </li>
       <li><a href="/waypoint/">Waypoint</a></li>

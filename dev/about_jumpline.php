@@ -41,12 +41,7 @@
 					<div class="l-half-left">
 						<p>At its foundation, the Jumpline High Performance program draws from the transformative "neck up" Tactical Stress Tolerance&trade;
 							(TST) programming created by Eric Potterat, Ph.D., a high-performance/sport psychologist, during his last 10 years
-							in the Navy, served as the force psychologist for the US Navy SEALs worldwide. Dr. Potterat was responsible for the
-							assessment, selection, development, maintenance and enhancement programs for arguably the nation’s best warriors and
-							highest performers. He was also responsible for mental toughness and performance psychology training, clinical care,
-							operational readiness/resilience training and neurocognitive evaluation programs for active-duty personnel across
-							the Navy's Special Operations Forces worldwide. He is considered one of the leading experts in individual and organizational
-							resilience and performance enhancement in high-risk, high-performance occupations.</p>
+							in the Navy, served as the force psychologist for the US Navy SEALs worldwide. Dr. Potterat was responsible for the psychological assessment, selection, development, maintenance and enhancement programs for arguably the nation’s best warriors and highest performers. He was also responsible for mental toughness and performance psychology training, clinical care, operational readiness/resilience training and neurocognitive evaluation programs for active-duty personnel across the Navy's Special Operations Forces worldwide. He is considered one of the leading experts in individual and organizational resilience and performance enhancement in high-risk, high-performance occupations.</p>
 						<p>Our groundbreaking program, drawing from Dr. Potterat’s experience and his 25,000 clinical encounters, brings the same
 							foundational mental performance techniques currently utilized by elite military personnel and professional athletes
 							to first responders and veterans. These proven tools enable first responders and veterans to move effectively through

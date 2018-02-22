@@ -86,19 +86,20 @@
 					</div>
 					<div class="l-one-third">
 						<h4>For Individuals</h4>
-						<p>Interested in using our program for yourself. The app is currently available for iOS or Android devices. Download and sign up today to get started on improving your mental and physical performance for duty.</p>
+						<p>Interested in using our program for yourself? The app is currently available for iOS or Android devices. Subscribe to get your download link and start improving your mental and physical performance today.</p>
 						<div class="contact-btns">
-							<a target="_blank" href="https://itunes.apple.com/us/app/jumpline-high-performance/id1242347803?mt=8" class="c-btn">
+							<a target="_blank" href="https://itunes.apple.com/us/app/jumpline-high-performance/id1242347803?mt=8">
 								<!-- APPLE BTN ICON SVG -->
 								<div class="c-btn_icon">
-									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="21px" height="24.4px" viewBox="0 0 21 24.4" style="enable-background:new 0 0 21 24.4;" xml:space="preserve">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="21px" height="24.4px" viewBox="0 0 21 24.4" style="enable-background:new 0 0 21 24.4;" xml:space="preserve" preserveAspectRatio="xMinYMin" class="buy-apple">
 							<style type="text/css">
-								.st0{fill:#FFFFFF;}
+								.st0{fill:#ffffff;}
+								.st1{fill:#000000;}
 							</style>
 							<defs>
 							</defs>
 							<g>
-								<path class="st0" d="M21,17.8L21,17.8c0,0.1-0.1,0.2-0.1,0.3c-0.6,1.5-1.4,3-2.5,4.2c-0.4,0.4-0.7,0.8-1.2,1.2
+								<path class="st1" d="M21,17.8L21,17.8c0,0.1-0.1,0.2-0.1,0.3c-0.6,1.5-1.4,3-2.5,4.2c-0.4,0.4-0.7,0.8-1.2,1.2
 									c-0.3,0.3-0.7,0.5-1,0.7c-0.5,0.2-1,0.3-1.5,0.2c-0.3-0.1-0.6-0.1-0.9-0.2c-0.3-0.1-0.7-0.3-1-0.4c-0.2-0.1-0.4-0.1-0.6-0.2
 									c-0.3-0.1-0.6-0.1-0.9-0.1c-0.4,0-0.8,0-1.2,0.1c-0.5,0.1-1,0.3-1.5,0.5C8.4,24,8.2,24.1,8,24.2c-0.3,0.1-0.7,0.2-1,0.2
 									c-0.2,0-0.5,0-0.7,0c-0.4,0-0.7-0.2-1.1-0.3c-0.5-0.3-0.9-0.6-1.3-1c-0.4-0.4-0.7-0.8-1-1.2c-0.7-1-1.3-2.1-1.8-3.2
@@ -108,17 +109,17 @@
 									c0.6,0.1,1.3,0.3,1.8,0.7c0.7,0.4,1.3,1,1.9,1.6c0,0,0,0,0,0c0,0,0,0-0.1,0c-0.3,0.2-0.5,0.4-0.7,0.6c-0.5,0.4-0.9,0.9-1.2,1.5
 									c-0.4,0.7-0.7,1.5-0.7,2.3c0,0.4,0,0.8,0.1,1.2c0.1,0.5,0.2,1,0.5,1.4c0.3,0.6,0.7,1.1,1.2,1.5C19.9,17.1,20.4,17.5,21,17.8
 									C21,17.8,21,17.8,21,17.8"/>
-								<path class="st0" d="M10.4,5.9c0,0,0-0.1,0-0.1c0-0.2,0-0.5,0-0.7c0-0.6,0.1-1.1,0.4-1.6c0.2-0.5,0.5-1,0.9-1.4
+								<path class="st1" d="M10.4,5.9c0,0,0-0.1,0-0.1c0-0.2,0-0.5,0-0.7c0-0.6,0.1-1.1,0.4-1.6c0.2-0.5,0.5-1,0.9-1.4
 									C12,1.6,12.5,1.1,13,0.8c0.6-0.4,1.2-0.6,1.8-0.7C15,0,15.2,0,15.4,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0.3,0,0.7,0,1
 									c-0.1,1-0.4,1.9-1,2.7c-0.5,0.6-1,1.1-1.6,1.5c-0.5,0.3-1.1,0.5-1.7,0.6C10.9,5.9,10.7,5.9,10.4,5.9C10.4,5.9,10.4,5.9,10.4,5.9"/>
 							</g>
 							</svg>
 								</div>
-								Download for iOS</a>
-							<a target="_blank" href="https://play.google.com/store/apps/details?id=io.jumpline.android&hl=en" class="c-btn">
+							</a>
+							<a target="_blank" href="https://play.google.com/store/apps/details?id=io.jumpline.android&hl=en">
 								<div class="c-btn_icon">
 									<!-- GOOGLE BTN ICON SVG -->
-									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20.7px" height="21.2px" viewBox="0 0 20.7 21.2" style="enable-background:new 0 0 20.7 21.2;" xml:space="preserve">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20.7px" height="21.2px" viewBox="0 0 20.7 21.2" style="enable-background:new 0 0 20.7 21.2;" xml:space="preserve" preserveAspectRatio="xMinYMin" class="buy-google">
 						<style type="text/css">
 							.google-red{fill:#E74336;}
 							.google-green{fill:#33A552;}
@@ -143,7 +144,13 @@
 						</g>
 						</svg>
 								</div>
-								Download for Android</a>
+							</a>
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal_form_btn">
+								<input type="hidden" name="cmd" value="_s-xclick">
+								<input type="hidden" name="hosted_button_id" value="VD5RRWK32P46U">
+								<input type="image" src="http://www.thejumpline.com/i/btn_subscribe_paypal.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+							</form>
 						</div>
 						<h4>Become a Sponsor</h4>
 						<p>Work with our Non-Profit The First Twenty to help suport our mission of imporving mental and physical performance of first-responders, military and veterans.</p>
