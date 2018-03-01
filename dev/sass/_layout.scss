@@ -298,7 +298,8 @@
 .gravity-home,
 .footer,
 .gravity-interior,
-.gravity-team {
+.gravity-team,
+.gravity-app {
   background: $black!important;
   padding-bottom: 80px;
   padding-top: 64px;
@@ -352,6 +353,13 @@
   background: $black!important;
   @media #{$custom_1} {
     background: url("i/header2_team.jpg") no-repeat bottom center!important;
+    background-size: cover!important;
+  }
+}
+.gravity-app {
+  background: $black!important;
+  @media #{$custom_1} {
+    background: url("i/header_getmobileapp.jpg") no-repeat bottom center!important;
     background-size: cover!important;
   }
 }
@@ -697,6 +705,34 @@
   justify-content: center;
 }
 
+.app-items {
+  margin-top: 0!important;
+}
+.app-item {
+  padding: 0 0 40px!important;
+
+  @media #{$medium} {
+    padding: 0 24px 0!important;
+  }
+}
+
+.app-icon {
+  display: block;
+  width: 80px!important;
+  height: 80px;
+  margin: 0 auto 24px;
+  float: none!important;
+
+  img {
+    width: 80px;
+    display: block;
+  }
+}
+
+.mobile-app-screenshots {
+  padding-top: 120px;
+}
+
 svg.l-inline-svg {
   float: none;
   width: 100%;
@@ -727,11 +763,11 @@ header {
     transition: $transition-out;
   }
 
-  @media #{$medium} {
+  @media screen and (min-width : 1200px) {
     padding-bottom: 0!important;
   }
   &.l-band {
-    @media #{$medium} {
+    @media screen and (min-width : 1200px) {
       padding-left: 4%;
       padding-right: 4%;
     }
@@ -744,7 +780,7 @@ header {
   }
   .main-navigation {
     display: none;
-    @media #{$medium} {
+    @media screen and (min-width : 1200px) {
       display: block;
     }
     li {
@@ -794,7 +830,7 @@ header {
     &:hover {
       cursor: pointer;
     }
-    @media #{$medium} {
+    @media screen and (min-width : 1200px) {
       display: none;
     }
   }
@@ -830,6 +866,10 @@ header {
       }
     }
   }
+}
+
+.c-mobile-app {
+
 }
 
 .c-team {
@@ -1335,7 +1375,7 @@ body,
   }
 }
 
-.contact-btns, .footer-btns {
+.contact-btns, .footer-btns, .header-btns {
   .c-btn_icon {
     margin-bottom: 24px;
     margin-right: 24px;
@@ -1347,4 +1387,23 @@ body,
       margin-top: 4px;
     }
   }
+}
+
+.header-app-icons {
+  float: left;
+  margin-top: 4px;
+
+  .c-btn_icon {
+    margin-right: 24px;
+  }
+}
+
+.header-paypal_form_btn {
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.individuals-holder-remove-when-replaced {
+  display: none;
 }

@@ -1,5 +1,5 @@
 <?php include('components/header.php'); ?>
-		<div class="l-contain">
+		<div>
 
 			<section class="l-band gravity-team u-black">
 				<div class="l-contain">

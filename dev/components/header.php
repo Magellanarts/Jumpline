@@ -29,7 +29,8 @@
       </ul>
     </li>
     <li><a href="/waypoint/">Waypoint</a></li>
-    <li><a class="c-btn alt" href="get_involved.php">Get Involved</a></li>
+    <li><a href="contact.php">Contact</a></li>
+    <li><a class="c-btn alt" href="get-mobile-app.php">Get Mobile App</a></li>
   </ul>
 </div>
 <header class="l-band u-black headroom js-header">
@@ -56,7 +57,8 @@
         </ul>
       </li>
       <li><a href="/waypoint/">Waypoint</a></li>
-      <li class="no-padding"><a class="c-btn alt" href="get_involved.php">Get Involved</a></li>
+      <li><a href="contact.php">Contact</a></li>
+      <li class="no-padding"><a class="c-btn alt" href="get-mobile-app.php">Get Mobile App</a></li>
     </ul>
   </nav>
   <nav class="mobile-navigation">
