@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115029717-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115029717-1');
+  </script>
   <meta charset="UTF-8">
   <title>Jumpline</title>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />

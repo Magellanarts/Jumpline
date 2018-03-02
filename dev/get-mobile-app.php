@@ -86,14 +86,14 @@
 								<img src="i/icon_mental.png">
 								</div>
 								<h3>Mental Performance Programming</h3>
-								<p>Follow our guided neck-up approach to mental fitness that helps you build a healthy routine of habits to be mentally prepared for duty.</p>
+								<p>Follow our guided neck-up approach to mental performance that helps you build a healthy routine of habits to be mentally prepared for duty.</p>
 						</div>
 						<div class="u-text-align-center app-item">
 								<div class="c-icon app-icon">
 								<img src="i/icon_physical.png">
 								</div>
 								<h3>Physical Performance Programming</h3>
-								<p>With an effecient approach to Physical Fitness and Nutrition, our workout plans and meal recommendations are designed to keep you fit and healthy.</p>
+								<p>With an efficient approach to Physical Fitness and Nutrition, our workout plans and nutrition recommendations are designed to keep you fit and healthy.</p>
 						</div>
 						<div class="u-text-align-center app-item">
 								<div class="c-icon app-icon">

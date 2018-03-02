@@ -362,6 +362,13 @@
     background: url("i/header_getmobileapp.jpg") no-repeat bottom center!important;
     background-size: cover!important;
   }
+  .l-half-left {
+    padding-right: 0;
+
+    p {
+      margin-bottom: 48px;
+    }
+  }
 }
 
 .gravity-home {
@@ -731,6 +738,11 @@
 
 .mobile-app-screenshots {
   padding-top: 120px;
+
+  .l-half-left, .l-half-right {
+    padding: 0;
+    text-align: center;
+  }
 }
 
 svg.l-inline-svg {
@@ -1402,6 +1414,7 @@ body,
   float: left;
   margin-right: 16px;
   margin-bottom: 16px;
+  max-height: 56px;
 }
 
 .individuals-holder-remove-when-replaced {
