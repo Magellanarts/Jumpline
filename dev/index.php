@@ -1,11 +1,10 @@
-<?php include('components/header.php'); ?>
+<?php include 'components/header.php';?>
 		<div class="l-contain">
 			<section class="l-band gravity-home u-black">
 				<div class="l-half-left">
 					<div class="gravity-home__header">
 						<h1 class="gravity-home__header__headings js-type-me"></h1>
 					</div>
-
 					<p>Preparing first responders and tactical athletes with mental fortitude for crucial, time-critical situations. <a href="how_it_works.php">Learn More</a></p>
 				</div>
 			</section>
@@ -107,7 +106,70 @@
 						<a class="c-btn" href="how_it_works.php">How it Works</a>
 					</div>
 					<div class="l-half-right">
-						<img src="i/about_app.png">
+						<div class="video-player">
+    					<video id="video"  poster="i/vid_staticimage.jpg">
+        				<source src="i/Jumpline-Final-website-2-720.mp4" type="video/mp4">
+        				<source src="i/Jumpline-Final-website-2-720.ogv" type="video/ogg">
+        				<source src="i/Jumpline-Final-website-2-720.WebM" type="video/webm">
+    					</video>
+    					<div id="video-controls">
+    						<div id="play-pause">
+									<div class="play-pause__icon">
+										<i class="icon icon_play">
+											<svg version="1.1" id="Play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+											<path d="M15,10.001c0,0.299-0.305,0.514-0.305,0.514l-8.561,5.303C5.51,16.227,5,15.924,5,15.149V4.852 c0-0.777,0.51-1.078,1.135-0.67l8.561,5.305C14.695,9.487,15,9.702,15,10.001z"/>
+											</svg>
+										</i>
+										<i src="i/pause.png" class="icon icon_pause">
+											<svg version="1.1" id="Pause" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+											<path d="M15,3h-2c-0.553,0-1,0.048-1,0.6V16.4c0,0.552,0.447,0.6,1,0.6h2c0.553,0,1-0.048,1-0.6V3.6C16,3.048,15.553,3,15,3z M7,3H5 C4.447,3,4,3.048,4,3.6V16.4C4,16.952,4.447,17,5,17h2c0.553,0,1-0.048,1-0.6V3.6C8,3.048,7.553,3,7,3z"/>
+											</svg>
+										</i>
+									</div>
+    						</div>
+    						<!-- button type="button" id="full-screen">Full-Screen</button -->
+    						<div class="enlarge-media" id="full-screen">
+            			<i class="icon icon_enlarge">
+										<svg version="1.1" id="Resize" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+										<path d="M6.987,10.987l-2.931,3.031L2,11.589V18h6.387l-2.43-2.081l3.03-2.932L6.987,10.987z M11.613,2l2.43,2.081l-3.03,2.932l2,2 l2.931-3.031L18,8.411V2H11.613z"/>
+										</svg>
+									</i>
+        				</div>
+  						</div>
+  						<script>
+								// Video
+								var video = document.getElementById("video");
+								// Buttons
+								var playButton = document.getElementById("play-pause");
+								var fullScreenButton = document.getElementById("full-screen");
+								var enlargeButton = document.getElementById("full-screen");
+								// Event listener for the play/pause button
+								playButton.addEventListener("click", function() {
+									if (video.paused == true) {
+										// Play the video
+										video.play();
+										jQuery(playButton).addClass('active');
+										jQuery(enlargeButton).addClass('active');
+
+									} else {
+										// Pause the video
+										video.pause();
+										jQuery(playButton).removeClass('active');
+										jQuery(enlargeButton).removeClass('active');
+									}
+								});
+								// Event listener for the full-screen button
+								fullScreenButton.addEventListener("click", function() {
+									if (video.requestFullscreen) {
+										video.requestFullscreen();
+									} else if (video.mozRequestFullScreen) {
+										video.mozRequestFullScreen(); // Firefox
+									} else if (video.webkitRequestFullscreen) {
+										video.webkitRequestFullscreen(); // Chrome and Safari
+									}
+								});
+ 						 	</script>
+						</div>
 					</div>
 					<div class="triangle"></div>
 				</div>
@@ -155,4 +217,4 @@
 					</div>
 				</div>
 			</section>
-<?php include('components/footer.php'); ?>
+<?php include 'components/footer.php';?>

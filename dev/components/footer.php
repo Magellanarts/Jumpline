@@ -98,7 +98,7 @@
 						</svg>
         </div>
         <div class="footer-address">
-          <p><strong>Jumpline High Performance</strong><br> <a href="get_involved.php" class="footer-contact">Contact Us</a></p>
+          <p><strong>Jumpline High Performance</strong><br> <a href="contact.php" class="footer-contact">Contact Us</a></p>
         </div>
       </div>
       <p class="u-small-text">&copy; 2018 Jumpline High Performance, all rights reserved.</p>

@@ -126,7 +126,7 @@
 				<div class="l-contain">
 					<h2 class="alt">Get Involved. Bring the Jumpline Program to Your Department.</h2>
 					<p>There are multiple ways to take part in our mission. Are you interested in rolling our program out to your department? Joining as an individual? Or interested in partnering or sponsoring our efforts? Contact us and tell us more.</p>
-					<a href="get_involved.php" class="c-btn">Contact Us</a>
+					<a href="contact.php" class="c-btn">Contact Us</a>
 				</div>
 			</section>
 
